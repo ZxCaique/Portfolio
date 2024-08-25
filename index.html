@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+    </head>
+    <body>
+        <header>
+            <div class="display">
+                <!-- Navegação principal para desktop -->
+                <nav class="Desktop">
+                    <ul>
+                        <li><a href="#topo">Sobre mim</a></li>
+                        <li><a href="#formação">Formação</a></li>
+                        <li><a href="#portfólio">Portfólio</a></li>
+                    </ul>
+                </nav> 
+                <div class="contato">
+                    <a href="#contato">
+                        <button>Contato</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <!-- Seção Sobre mim -->
+            <section class="topo" id="topo">
+                <div class="display-topo">
+                    <div class="flex">
+                        <div class="texto">
+                            <h1>OLÁ!<br>MEU NOME É <span>CAIQUE REIS</span></h1>
+                            <p>Sou desenvolvedor front-end e tenho 19 anos, <br> gosto muito de aprender novas tecnologias, <br> e sou fissurado no mundo dos games.</p>
+                        </div>
+                        <div class="imagen-topo">
+                            <img src="imgs/Eu.jpg" alt="Foto de Caique Reis">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Seção sobre minha formação -->
+            <section class="formação" id="formação">
+                <div class="texto">
+                    <h1>FORMAÇÃO</h1>
+                    <br><br>
+                    <h2>FORMAÇÃO EDUCACIONAL:</h2>
+                    <p>Estudante de análise e desenvolvimento de sistemas</p>
+                    <br><br>
+                    <h2>ESPECIALIDADE:</h2>
+                    <p>Front-end</p>
+                    <br><br>
+                    <h2>IDIOMA EXTRANGEIRO:</h2>
+                    <p>Inglês básico</p>
+                </div>
+            </section>
+    
+            <!-- Seção de portfólio com imagens de projetos, que contém links que levam para esses projetos -->
+            <section class="portfólio" id="portfólio">
+                <div class="display-portfólio">
+                    <h1>PORTFÓLIO</h1>
+                    <br><br>
+                    <div class="flex">
+                        <a href="https://zxcaique.github.io/Regra-de-tres/" class="img-link" target="_blank">
+                        <div class="img" style="background-image: url(imgs/calc.png);">
+                            <div class="black-smoke">Calculadora de regra de três</div>
+                        </div>
+                        </a>
+                        <a href="https://zxcaique.github.io/Previsao-do-tempo/" class="img-link" target="_blank">
+                        <div class="img" style="background-image: url(imgs/tempo.png);">
+                            <div class="black-smoke">Previsão do tempo</div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Seção de contato com um formulário -->
+            <section class="contato" id="contato">
+                <div class="display-contato">
+                    <h1>CONTATO</h1>
+                    <form action="">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome:" required>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email:" required>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite uma mensagem:" required></textarea>
+                        <div class="botão-contato">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>

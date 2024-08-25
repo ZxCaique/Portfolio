@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Barra de navegação fixa */
+.display {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Links do cabeçalho */
+header a {
+    color: rgba(0, 0, 0, 0.726);
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Lista de navegação */
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 180px;
+}
+
+/* Botão de contato */
+header .contato button {
+    padding: 10px 50%;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: black;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Seção topo */
+section.topo {
+    padding: 280px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+/* Layout da seção topo */
+.display-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-topo h1 {
+    color: whitesmoke;
+    font-size: 38px;
+}
+
+.display-topo h1 span {
+    color: orangered;
+    font-size: 38px;
+}
+
+.display-topo p {
+    color: whitesmoke;
+}
+
+/* Imagem na seção topo */
+.imagen-topo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+}
+
+/* Seção de formação */
+section.formação {
+    padding: 220px 4%;
+    box-shadow: 0 0 25px 10px rgba(245, 245, 245, 0.274);
+}
+
+.texto h1 {
+    color: whitesmoke;
+    font-size: 38px;
+}
+
+.texto h2 {
+    color: orangered;
+    font-size: 28px;
+}
+
+.texto p {
+    color: whitesmoke;
+}
+
+/* Seção de portfólio */
+section.portfólio {
+    padding: 220px 4%;
+}
+
+section.portfólio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.display-portfólio h1 {
+    color: whitesmoke;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Imagens do portfólio */
+.img {
+    width: 360px;
+    height: 460px;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+/* Sobreposição das imagens */
+.black-smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b4;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    transition: .7s;
+}
+
+.black-smoke:hover {
+    opacity: 1;
+}
+
+/* Seção de contato */
+section.contato {
+    padding: 220px 4%;
+    box-shadow: 0 0 25px 10px rgba(245, 245, 245, 0.274);
+}
+
+.display-contato h1 {
+    color: whitesmoke;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 15px 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    outline: 0;
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.856);
+    color: black;
+}
+
+form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.664);
+}
+
+form input::placeholder {
+    color: rgba(0, 0, 0, 0.664);
+}
+
+form textarea {
+    resize: none;
+}
+
+/* Botão de envio do formulário */
+form .botão-contato {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .botão-contato input { 
+    width: 140px;
+    background-color: orangered;
+    color: whitesmoke;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botão-contato input:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivividade */
+@media screen and (max-width: 1300px) {
+
+    /* Layout flexível em coluna */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* Ocultar a barra de navegação */
+    .display {
+        display: none;
+    }
+
+    /* Ajustes na seção topo */
+    section.topo {
+        padding: 15px 8%;
+    }
+
+    section.topo .flex {
+        gap: 30px;
+    }
+
+    .display-topo h1 {
+        font-size: 25px;
+    }
+
+    .display-topo h1 span {
+        font-size: 25px;
+    }
+
+    .display-topo p {
+        font-size: 11px;
+    }
+
+    .imagen-topo img {
+        width: 100%;
+    }
+
+    /* Ajustes nas seções de formação e portfólio */
+    section.formação {
+        padding: 100px 8%;
+    }
+
+    section.portfólio {
+        padding: 100px 8%;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+
+    section.portfólio .flex {
+        gap: 40px;
+    }
+
+    /* Ajustes na seção de contato */
+    section.contato {
+        padding: 100px 8%;
+    }
+}
